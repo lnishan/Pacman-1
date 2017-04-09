@@ -58,8 +58,6 @@ class CleanerAgent(Agent):
     def getAction(self, state):
         "The agent receives a GameState (defined in pacman.py)."
         "[Project 1] YOUR CODE HERE"
-        x, y = state.getPacmanState().configuration.getPosition()
-        print('(%d, %d)' %(x, y))
         legal = state.getLegalPacmanActions()
         current = state.getPacmanState().configuration.direction
         if current == Directions.STOP: return Directions.EAST
@@ -82,6 +80,47 @@ class FroggerAgent(Agent):
     def getAction(self, state):
         "The agent receives a GameState (defined in pacman.py)."
         "[Project 1] YOUR CODE HERE"
+        
+        pconf = state.getPacmanState().configuration
+        ppos = pconf.getPosition()
+        
+        if ppos == (1, 8):
+            return Directions.EAST
+        elif ppos == (2, 8):
+            return Directions.SOUTH
+        elif ppos == (7, 2):
+            return Directions.EAST
+        elif ppos == (8, 2):
+            return Directions.SOUTH
+        
+        ghostPositions = []
+        for i in range(1, state.getNumAgents()):
+            gconf = state.getGhostState(i).configuration
+            gpos = gconf.getPosition()
+            gdir = gconf.getDirection()
+            ghostPositions.append(gpos)
+            if gdir in state.getLegalActions(i):
+                ghostPositions.append(Actions.getSuccessor(gpos, gdir))
+            else:
+                ghostPositions.append(Actions.getSuccessor(gpos, Directions.REVERSE[gdir]))
+        print('-------')
+        for gpos in ghostPositions:
+            print('- Ghost Position: ' + str(gpos))
+        print(ppos)
+        
+        att = Directions.STOP
+        legal = state.getLegalPacmanActions()
+        if Directions.SOUTH in legal and ppos[1] >= 3:
+            if Actions.getSuccessor(ppos, Directions.SOUTH) not in ghostPositions:
+                return Directions.SOUTH
+            else:
+                return Directions.STOP
+        elif Directions.EAST in legal and ppos[0] <= 6:
+            if Actions.getSuccessor(ppos, Directions.EAST) not in ghostPositions:
+                return Directions.EAST
+            else:
+                return Directions.STOP
+
         
         return Directions.STOP
         
