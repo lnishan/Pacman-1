@@ -110,12 +110,12 @@ class FroggerAgent(Agent):
         
         att = Directions.STOP
         legal = state.getLegalPacmanActions()
-        if Directions.SOUTH in legal and ppos[1] >= 3:
+        if Directions.SOUTH in legal and ppos[1] >= 3: # 1 + 2
             if Actions.getSuccessor(ppos, Directions.SOUTH) not in ghostPositions:
                 return Directions.SOUTH
             else:
                 return Directions.STOP
-        elif Directions.EAST in legal and ppos[0] <= 6:
+        elif Directions.EAST in legal and ppos[0] <= 6: # 8 - 2
             if Actions.getSuccessor(ppos, Directions.EAST) not in ghostPositions:
                 return Directions.EAST
             else:
@@ -128,9 +128,69 @@ class FroggerAgent(Agent):
 class SnakeAgent(Agent):
     "But you don't have a sneaking suit."
     
+    def __init__(self):
+        self.stage = 0
+    
     def getAction(self, state):
         "The agent receives a GameState (defined in pacman.py)."
         "[Project 1] YOUR CODE HERE"
+        print('---')
+        for gs in state.getGhostStates():
+            print(gs.configuration.getPosition())
+        
+        if self.stage == 0:
+            if state.getPacmanState().configuration.getDirection() == Directions.NORTH:
+                self.stage = 1
+                return Directions.STOP
+            elif Directions.NORTH in state.getLegalPacmanActions():
+                return Directions.NORTH
+            else:
+                return Directions.EAST
+        elif self.stage == 1:
+            safe = 0
+            for i in range(1, state.getNumAgents()):
+                gconf = state.getGhostState(i).configuration
+                gpos = gconf.getPosition()
+                gdir = gconf.getDirection()
+                gpos_next = (0, 0)
+                if gdir in state.getLegalActions(i):
+                    gpos_next = Actions.getSuccessor(gpos, gdir)
+                else:
+                    gpos_next = Actions.getSuccessor(gpos, Directions.REVERSE[gdir])
+                pacx = state.getPacmanState().configuration.getPosition()[0]
+                if (gpos[0] < pacx and gpos_next[0] < pacx) or (gpos[0] > pacx and gdir == Directions.EAST):
+                    safe = safe + 1
+            if safe == 2:
+                self.stage = 2
+                return Directions.SOUTH
+        elif self.stage == 2:
+            self.stage = 3
+            return Directions.EAST
+        elif self.stage == 3:
+            if state.getPacmanState().configuration.getDirection() == Directions.SOUTH:
+                self.stage = 4
+                return Directions.STOP
+            elif Directions.SOUTH in state.getLegalPacmanActions():
+                return Directions.SOUTH
+            else:
+                return Directions.EAST
+        elif self.stage == 4:
+            for i in range(1, state.getNumAgents()):
+                gconf = state.getGhostState(i).configuration
+                gpos = gconf.getPosition()
+                gdir = gconf.getDirection()
+                gpos_next = (0, 0)
+                if gdir in state.getLegalActions(i):
+                    gpos_next = Actions.getSuccessor(gpos, gdir)
+                else:
+                    gpos_next = Actions.getSuccessor(gpos, Directions.REVERSE[gdir])
+                pacx = state.getPacmanState().configuration.getPosition()[0]
+                if gpos[0] >= pacx or gpos_next[0] >= pacx:
+                    return Directions.STOP
+            self.stage =  5
+            return Directions.NORTH
+        elif self.stage == 5:
+            return Directions.EAST
         
         return Directions.STOP
         
@@ -141,7 +201,7 @@ class DodgeAgent(Agent):
     def getAction(self, state):
         "The agent receives a GameState (defined in pacman.py)."
         "[Project 1] YOUR CODE HERE"
-        
+         
         return Directions.STOP
 
 #######################################################
