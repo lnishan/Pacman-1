@@ -93,25 +93,22 @@ def depthFirstSearch(problem):
     from game import Directions
     
     s_start = problem.getStartState()
-    print "Start:", s_start
-    print "Is the start a goal?", problem.isGoalState(problem.getStartState())
-    print "Start's successors:", problem.getSuccessors(problem.getStartState())
-    
-    print(problem.getSuccessors(s_start))
+    if problem.isGoalState(s_start): return []
     
     visited = {}
     states = []
     s_iter = []
     actions = []
+    s_nbs = {}
     
     visited[s_start] = True
     states.append(s_start)
     s_iter.append(0)
+    s_nbs[s_start] = problem.getSuccessors(s_start)
     
     while len(states) > 0:
         s = states[-1]
-        if problem.isGoalState(s): break
-        nbs = problem.getSuccessors(s)
+        nbs = s_nbs[s]
         nb_used = False
         for i in range(s_iter[-1], len(nbs)):
             nb = nbs[i]
@@ -121,6 +118,8 @@ def depthFirstSearch(problem):
             states.append(nb[0])
             s_iter.append(0)
             actions.append(nb[1])
+            if problem.isGoalState(nb[0]): return actions
+            s_nbs[nb[0]] = problem.getSuccessors(nb[0])
             nb_used = True
             break
         
@@ -141,9 +140,6 @@ def breadthFirstSearch(problem):
     from game import Directions
     
     s_start = problem.getStartState()
-    print "Start:", s_start
-    print "Is the start a goal?", problem.isGoalState(problem.getStartState())
-    print "Start's successors:", problem.getSuccessors(problem.getStartState())
     
     visited = {}
     prv = {}
@@ -192,30 +188,39 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     from game import Directions
     
     s_start = problem.getStartState()
-    print "Start:", s_start
-    print "Is the start a goal?", problem.isGoalState(problem.getStartState())
-    print "Start's successors:", problem.getSuccessors(problem.getStartState())
     
-    visited = {}
+    expanded = {}
+    min_g = {}
     prv = {}
-    nodes = util.PriorityQueue()
+    states = util.PriorityQueue()
+    min_goal_s = (0, 0)
+    min_goal_g = None
     
-    visited[s_start] = True
-    nodes.push((0, s_start), 0)
-    while not nodes.isEmpty():
-        qn = nodes.pop()
-        qg = qn[0]
-        qs = qn[1]
-        if (problem.isGoalState(qs)): break
+    min_g[s_start] = 0
+    states.push(s_start, 0)
+    while not states.isEmpty():
+        qs = states.pop()
+        qg = min_g[qs]
+        if expanded.has_key(qs): continue
+        expanded[qs] = True
+        if problem.isGoalState(qs):
+            if min_goal_g == None or qg < min_goal_g:
+                min_goal_g = qg
+                min_goal_s = qs
+            break  # assuming only one goal
         nbs = problem.getSuccessors(qs)
         for nb in nbs:
-            if visited.has_key(nb[0]): continue
-            visited[nb[0]] = True
-            nodes.push((qg + nb[2], nb[0]), qg + nb[2] + heuristic(nb[0], problem))
-            prv[nb[0]] = (qs, nb[1])
+            ng = qg + nb[2]
+            nh = heuristic(nb[0], problem)
+            if min_g.has_key(nb[0]) == False or ng < min_g[nb[0]]: 
+                min_g[nb[0]] = ng
+                states.push(nb[0], ng + nh)
+                prv[nb[0]] = (qs, nb[1])
+    
+    print('astar finished')
     
     act_rev = []
-    s = qs
+    s = min_goal_s
     while s != s_start:
         act_rev.append(prv[s][1])
         s = prv[s][0]
