@@ -217,8 +217,6 @@ def aStarSearch(problem, heuristic=nullHeuristic):
                 states.push(nb[0], ng + nh)
                 prv[nb[0]] = (qs, nb[1])
     
-    print('astar finished')
-    
     act_rev = []
     s = min_goal_s
     while s != s_start:

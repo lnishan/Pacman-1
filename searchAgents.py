@@ -103,10 +103,10 @@ class FroggerAgent(Agent):
                 ghostPositions.append(Actions.getSuccessor(gpos, gdir))
             else:
                 ghostPositions.append(Actions.getSuccessor(gpos, Directions.REVERSE[gdir]))
-        print('---')
+        """print('---')
         for gpos in ghostPositions:
             print('- Ghost Position: ' + str(gpos))
-        print(ppos)
+        print(ppos)"""
         
         att = Directions.STOP
         legal = state.getLegalPacmanActions()
@@ -134,10 +134,10 @@ class SnakeAgent(Agent):
     def getAction(self, state):
         "The agent receives a GameState (defined in pacman.py)."
         "[Project 1] YOUR CODE HERE"
-        print('---')
+        """print('---')
         for gs in state.getGhostStates():
-            print(gs.configuration.getPosition())
-        
+            print(gs.configuration.getPosition())"""
+
         if self.stage == 0:
             if state.getPacmanState().configuration.getDirection() == Directions.NORTH:
                 self.stage = 1
@@ -191,16 +191,16 @@ class SnakeAgent(Agent):
             return Directions.NORTH
         elif self.stage == 5:
             return Directions.EAST
-        
+
         return Directions.STOP
-        
+
 "P1-4"
 class DodgeAgent(Agent):
     "You can run, but you can't hide."
-    
+
     def __init__(self):
         self.clock = True
-    
+
     def getAction(self, state):
         "The agent receives a GameState (defined in pacman.py)."
         "[Project 1] YOUR CODE HERE"
@@ -216,7 +216,7 @@ class DodgeAgent(Agent):
             pdir_next = Directions.LEFT[pdir]
             if pdir_next not in legal or len(legal) > 3:
                 pdir_next = pdir
-        
+
         ppos_next = Actions.getSuccessor(pconf.getPosition(), pdir_next)
         gconf = state.getGhostState(1).configuration
         gpos_nexts = [Actions.getSuccessor(gconf.getPosition(), x) for x in state.getLegalActions(1)]
