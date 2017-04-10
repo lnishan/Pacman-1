@@ -90,7 +90,47 @@ def depthFirstSearch(problem):
     
     "[Project 2] YOUR CODE HERE"
     
-    util.raiseNotDefined()
+    from game import Directions
+    
+    s_start = problem.getStartState()
+    print "Start:", s_start
+    print "Is the start a goal?", problem.isGoalState(problem.getStartState())
+    print "Start's successors:", problem.getSuccessors(problem.getStartState())
+    
+    print(problem.getSuccessors(s_start))
+    
+    visited = {}
+    states = []
+    s_iter = []
+    actions = []
+    
+    visited[s_start] = True
+    states.append(s_start)
+    s_iter.append(0)
+    
+    while len(states) > 0:
+        s = states[-1]
+        if problem.isGoalState(s): break
+        nbs = problem.getSuccessors(s)
+        nb_used = False
+        for i in range(s_iter[-1], len(nbs)):
+            nb = nbs[i]
+            s_iter[-1] = s_iter[-1] + 1
+            if visited.has_key(nb[0]): continue
+            visited[nb[0]] = True
+            states.append(nb[0])
+            s_iter.append(0)
+            actions.append(nb[1])
+            nb_used = True
+            break
+        
+        if nb_used == False:
+            states.pop()
+            s_iter.pop()
+            if len(actions) > 0: actions.pop() # if s = start state then actions = empty
+    
+    return actions
+
 
 # P2-2
 def breadthFirstSearch(problem):
