@@ -189,6 +189,39 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     
     "[Project 2] YOUR CODE HERE"
     
+    from game import Directions
+    
+    s_start = problem.getStartState()
+    print "Start:", s_start
+    print "Is the start a goal?", problem.isGoalState(problem.getStartState())
+    print "Start's successors:", problem.getSuccessors(problem.getStartState())
+    
+    visited = {}
+    prv = {}
+    nodes = util.PriorityQueue()
+    
+    visited[s_start] = True
+    nodes.push((0, s_start), 0)
+    while not nodes.isEmpty():
+        qn = nodes.pop()
+        qg = qn[0]
+        qs = qn[1]
+        if (problem.isGoalState(qs)): break
+        nbs = problem.getSuccessors(qs)
+        for nb in nbs:
+            if visited.has_key(nb[0]): continue
+            visited[nb[0]] = True
+            nodes.push((qg + nb[2], nb[0]), qg + nb[2] + heuristic(nb[0], problem))
+            prv[nb[0]] = (qs, nb[1])
+    
+    act_rev = []
+    s = qs
+    while s != s_start:
+        act_rev.append(prv[s][1])
+        s = prv[s][0]
+    
+    return act_rev[::-1]
+     
     util.raiseNotDefined()
 
 
