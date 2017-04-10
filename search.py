@@ -138,7 +138,38 @@ def breadthFirstSearch(problem):
     
     "[Project 2] YOUR CODE HERE"    
     
-    util.raiseNotDefined()
+    from game import Directions
+    
+    s_start = problem.getStartState()
+    print "Start:", s_start
+    print "Is the start a goal?", problem.isGoalState(problem.getStartState())
+    print "Start's successors:", problem.getSuccessors(problem.getStartState())
+    
+    visited = {}
+    prv = {}
+    states = util.Queue()
+    
+    visited[s_start] = True
+    states.push(s_start)
+    while not states.isEmpty():
+        qs = states.pop()
+        if (problem.isGoalState(qs)): break
+        nbs = problem.getSuccessors(qs)
+        for nb in nbs:
+            if visited.has_key(nb[0]): continue
+            visited[nb[0]] = True
+            states.push(nb[0])
+            prv[nb[0]] = (qs, nb[1])
+    
+    act_rev = []
+    s = qs
+    while s != s_start:
+        act_rev.append(prv[s][1])
+        s = prv[s][0]
+    
+    return act_rev[::-1]
+    
+#    util.raiseNotDefined()
 
 def uniformCostSearch(problem):
     """Search the node of least total cost first."""
