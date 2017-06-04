@@ -1,7 +1,8 @@
 # Pacman-1
-Introduction to Artificial Intelligence, Spring 2017, National Chiao Tung University
 
 Assignment 1: Simple Agents, DFS, BFS, A*
+
+Introduction to Artificial Intelligence, Spring 2017, National Chiao Tung University
 
 
 ## Notes
