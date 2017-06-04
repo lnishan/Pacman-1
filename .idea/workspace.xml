@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02244a26-e7a0-43bf-9b0d-8c47f6e881ed" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Pacman.iml" afterPath="$PROJECT_DIR$/.idea/Pacman.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/VERSION" afterPath="$PROJECT_DIR$/VERSION" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autograder.py" afterPath="$PROJECT_DIR$/autograder.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/commands.txt" afterPath="$PROJECT_DIR$/commands.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/eightpuzzle.py" afterPath="$PROJECT_DIR$/eightpuzzle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.py" afterPath="$PROJECT_DIR$/game.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ghostAgents.py" afterPath="$PROJECT_DIR$/ghostAgents.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grading.py" afterPath="$PROJECT_DIR$/grading.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphicsDisplay.py" afterPath="$PROJECT_DIR$/graphicsDisplay.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/graphicsUtils.py" afterPath="$PROJECT_DIR$/graphicsUtils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/keyboardAgents.py" afterPath="$PROJECT_DIR$/keyboardAgents.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layout.py" afterPath="$PROJECT_DIR$/layout.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/P1-1.lay" afterPath="$PROJECT_DIR$/layouts/P1-1.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/P1-2.lay" afterPath="$PROJECT_DIR$/layouts/P1-2.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/P1-3.lay" afterPath="$PROJECT_DIR$/layouts/P1-3.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/P1-4.lay" afterPath="$PROJECT_DIR$/layouts/P1-4.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/bigCorners.lay" afterPath="$PROJECT_DIR$/layouts/bigCorners.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/bigMaze.lay" afterPath="$PROJECT_DIR$/layouts/bigMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/bigSafeSearch.lay" afterPath="$PROJECT_DIR$/layouts/bigSafeSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/bigSearch.lay" afterPath="$PROJECT_DIR$/layouts/bigSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/boxSearch.lay" afterPath="$PROJECT_DIR$/layouts/boxSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/capsuleClassic.lay" afterPath="$PROJECT_DIR$/layouts/capsuleClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/contestClassic.lay" afterPath="$PROJECT_DIR$/layouts/contestClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/contoursMaze.lay" afterPath="$PROJECT_DIR$/layouts/contoursMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/greedySearch.lay" afterPath="$PROJECT_DIR$/layouts/greedySearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/mediumClassic.lay" afterPath="$PROJECT_DIR$/layouts/mediumClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/mediumCorners.lay" afterPath="$PROJECT_DIR$/layouts/mediumCorners.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/mediumDottedMaze.lay" afterPath="$PROJECT_DIR$/layouts/mediumDottedMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/mediumMaze.lay" afterPath="$PROJECT_DIR$/layouts/mediumMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/mediumSafeSearch.lay" afterPath="$PROJECT_DIR$/layouts/mediumSafeSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/mediumScaryMaze.lay" afterPath="$PROJECT_DIR$/layouts/mediumScaryMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/mediumSearch.lay" afterPath="$PROJECT_DIR$/layouts/mediumSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/minimaxClassic.lay" afterPath="$PROJECT_DIR$/layouts/minimaxClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/oddSearch.lay" afterPath="$PROJECT_DIR$/layouts/oddSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/openClassic.lay" afterPath="$PROJECT_DIR$/layouts/openClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/openMaze.lay" afterPath="$PROJECT_DIR$/layouts/openMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/openSearch.lay" afterPath="$PROJECT_DIR$/layouts/openSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/originalClassic.lay" afterPath="$PROJECT_DIR$/layouts/originalClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/smallClassic.lay" afterPath="$PROJECT_DIR$/layouts/smallClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/smallMaze.lay" afterPath="$PROJECT_DIR$/layouts/smallMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/smallSafeSearch.lay" afterPath="$PROJECT_DIR$/layouts/smallSafeSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/smallSearch.lay" afterPath="$PROJECT_DIR$/layouts/smallSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/testClassic.lay" afterPath="$PROJECT_DIR$/layouts/testClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/testMaze.lay" afterPath="$PROJECT_DIR$/layouts/testMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/testSearch.lay" afterPath="$PROJECT_DIR$/layouts/testSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/tinyCorners.lay" afterPath="$PROJECT_DIR$/layouts/tinyCorners.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/tinyMaze.lay" afterPath="$PROJECT_DIR$/layouts/tinyMaze.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/tinySafeSearch.lay" afterPath="$PROJECT_DIR$/layouts/tinySafeSearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/tinySearch.lay" afterPath="$PROJECT_DIR$/layouts/tinySearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/trappedClassic.lay" afterPath="$PROJECT_DIR$/layouts/trappedClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/trickyClassic.lay" afterPath="$PROJECT_DIR$/layouts/trickyClassic.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/layouts/trickySearch.lay" afterPath="$PROJECT_DIR$/layouts/trickySearch.lay" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pacman.py" afterPath="$PROJECT_DIR$/pacman.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pacmanAgents.py" afterPath="$PROJECT_DIR$/pacmanAgents.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectParams.py" afterPath="$PROJECT_DIR$/projectParams.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.py" afterPath="$PROJECT_DIR$/search.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchAgents.py" afterPath="$PROJECT_DIR$/searchAgents.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchTestClasses.py" afterPath="$PROJECT_DIR$/searchTestClasses.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testClasses.py" afterPath="$PROJECT_DIR$/testClasses.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testParser.py" afterPath="$PROJECT_DIR$/testParser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/CONFIG" afterPath="$PROJECT_DIR$/test_cases/CONFIG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q1/CONFIG" afterPath="$PROJECT_DIR$/test_cases/q1/CONFIG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q1/graph_backtrack.solution" afterPath="$PROJECT_DIR$/test_cases/q1/graph_backtrack.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q1/graph_backtrack.test" afterPath="$PROJECT_DIR$/test_cases/q1/graph_backtrack.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q1/graph_bfs_vs_dfs.solution" afterPath="$PROJECT_DIR$/test_cases/q1/graph_bfs_vs_dfs.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q1/graph_bfs_vs_dfs.test" afterPath="$PROJECT_DIR$/test_cases/q1/graph_bfs_vs_dfs.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q1/graph_infinite.solution" afterPath="$PROJECT_DIR$/test_cases/q1/graph_infinite.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q1/graph_infinite.test" afterPath="$PROJECT_DIR$/test_cases/q1/graph_infinite.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q2/CONFIG" afterPath="$PROJECT_DIR$/test_cases/q2/CONFIG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q2/graph_backtrack.solution" afterPath="$PROJECT_DIR$/test_cases/q2/graph_backtrack.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q2/graph_backtrack.test" afterPath="$PROJECT_DIR$/test_cases/q2/graph_backtrack.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q2/graph_bfs_vs_dfs.solution" afterPath="$PROJECT_DIR$/test_cases/q2/graph_bfs_vs_dfs.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q2/graph_bfs_vs_dfs.test" afterPath="$PROJECT_DIR$/test_cases/q2/graph_bfs_vs_dfs.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q2/graph_infinite.solution" afterPath="$PROJECT_DIR$/test_cases/q2/graph_infinite.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q2/graph_infinite.test" afterPath="$PROJECT_DIR$/test_cases/q2/graph_infinite.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/CONFIG" afterPath="$PROJECT_DIR$/test_cases/q4/CONFIG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/astar_0.solution" afterPath="$PROJECT_DIR$/test_cases/q4/astar_0.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/astar_0.test" afterPath="$PROJECT_DIR$/test_cases/q4/astar_0.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/astar_1_graph_heuristic.solution" afterPath="$PROJECT_DIR$/test_cases/q4/astar_1_graph_heuristic.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/astar_1_graph_heuristic.test" afterPath="$PROJECT_DIR$/test_cases/q4/astar_1_graph_heuristic.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/astar_2_manhattan.solution" afterPath="$PROJECT_DIR$/test_cases/q4/astar_2_manhattan.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/astar_2_manhattan.test" afterPath="$PROJECT_DIR$/test_cases/q4/astar_2_manhattan.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/astar_3_goalAtDequeue.solution" afterPath="$PROJECT_DIR$/test_cases/q4/astar_3_goalAtDequeue.solution" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_cases/q4/astar_3_goalAtDequeue.test" afterPath="$PROJECT_DIR$/test_cases/q4/astar_3_goalAtDequeue.test" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/textDisplay.py" afterPath="$PROJECT_DIR$/textDisplay.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util.py" afterPath="$PROJECT_DIR$/util.py" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="search.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-255">
+              <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchAgents.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/searchAgents.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/searchAgents.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pacman-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pacman-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.P1-1">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pacman" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pacman" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pacman" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pacman" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;.&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method />
+    </configuration>
+    <configuration default="false" name="P1-1" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Pacman" />
+      <option name="SCRIPT_NAME" value="pacman.py" />
+      <option name="PARAMETERS" value="-p CleanerAgent -l P1-1" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.P1-1" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02244a26-e7a0-43bf-9b0d-8c47f6e881ed" name="Default" comment="" />
+      <created>1495267656815</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1495267656815</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="21" column="20" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchAgents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="55" column="29" lean-forward="true" selection-start-line="55" selection-start-column="29" selection-end-line="55" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
